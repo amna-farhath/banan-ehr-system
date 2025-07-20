@@ -1,0 +1,51 @@
+// src/pages/NewTestRequest.js
+import React, { useState } from 'react';
+
+const NewTestRequest = () => {
+    const [selectedTest, setSelectedTest] = useState('cbc');
+    const [testReason, setTestReason] = useState('');
+    const [doctorNote, setDoctorNote] = useState('');
+
+    const handleAddTest = () => {
+        // Add logic for submitting the form
+        console.log('Test requested:', selectedTest, testReason, doctorNote);
+        window.close(); // Close the popup after submission
+    };
+
+    return (
+        <div>
+            <h2>Blood Test Request</h2>
+
+            <label>Blood Test Type</label>
+            <select value={selectedTest} onChange={(e) => setSelectedTest(e.target.value)}>
+                <option value="cbc">CBC</option>
+                <option value="lipidProfile">Lipid Profile</option>
+                <option value="bloodGlucose">Blood Glucose</option>
+                <option value="lft">LFT</option>
+                <option value="kft">KFT</option>
+                <option value="bun">BUN</option>
+            </select>
+
+            <label>Test Reason</label>
+            <input
+                type="text"
+                value={testReason}
+                onChange={(e) => setTestReason(e.target.value)}
+            />
+
+            <label>Doctor's Note</label>
+            <input
+                type="text"
+                value={doctorNote}
+                onChange={(e) => setDoctorNote(e.target.value)}
+            />
+
+            <div>
+                <button onClick={handleAddTest}>Add</button>
+                <button onClick={() => window.close()}>Cancel</button>
+            </div>
+        </div>
+    );
+};
+
+export default NewTestRequest;

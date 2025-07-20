@@ -1,0 +1,96 @@
+/* src/components/LoginPage.css */
+
+/* General container styling */
+.login-page-container {
+  width: 400px;
+  margin: 100px auto;
+  padding: 30px;
+  background: #004d40;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.login-page-container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #fff; /* Ensure the header text is also white */
+}
+
+/* Form styling */
+.login-page-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login-page-form-group {
+  margin-bottom: 15px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.login-page-form-group label {
+  font-size: 16px;
+  margin-bottom: 5px;
+  color: #fff; /* Change label text color to white */
+}
+
+.login-page-form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: border 0.3s;
+  color: #fff; /* Set text color for input fields to white */
+  background-color: #004d40; /* Optional: Set a matching background color for input fields */
+}
+
+.login-page-form-group input:focus {
+  border-color: #fff; /* Change border color to white when focused */
+}
+
+/* Button styling */
+.login-page-button-group {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.login-page-btn {
+  background-color: #004d40; /* Primary button color */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s; /* Button effects */
+}
+
+.login-page-btn:hover {
+  transform: translateY(-2px); /* Lift effect on hover */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Shadow on hover */
+}
+
+.login-page-btn-forgot {
+  background-color: #f0f0f0; /* Optional separate color for 'Forgot password' */
+  color: #333;
+}
+
+.login-page-btn-uae-pass {
+  background-color: #5a6268; /* Color for UAE PASS button */
+}
+
+.login-page-btn-uae-pass:hover {
+  background-color: #5a6268; /* Darker shade on hover */
+}

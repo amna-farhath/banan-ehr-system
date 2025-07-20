@@ -1,0 +1,48 @@
+/* Dashboard.css */
+
+.patdashboard-container {
+    padding: 20px;
+    background-color: #f0f4f4; /* Light background for contrast */
+}
+
+/* Patient Details Styling */
+.patdashboard-patient-details-container {
+    margin-bottom: 20px; /* Space below patient details */
+}
+
+/* Dashboard Grid */
+.patdashboard-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsive grid layout */
+    gap: 20px; /* Space between grid items */
+}
+
+/* Dashboard Block */
+.patdashboard-block {
+    background-color: #004d40; /* Block background color */
+    border-radius: 10px; /* Rounded corners for a softer look */
+    padding: 20px; /* Internal padding */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* 3D shadow effect */
+    transition: transform 0.2s ease, box-shadow 0.2s ease; /* Smooth transitions */
+}
+
+.patdashboard-block:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3); /* Stronger shadow on hover */
+}
+
+/* Link Button Styling */
+.patdashboard-link-button {
+    display: inline-block; /* Make link a block element */
+    margin-top: 10px; /* Space above the link */
+    padding: 10px 15px; /* Padding for the button */
+    background-color: #00796b; /* Button background color */
+    color: white; /* Button text color */
+    border-radius: 5px; /* Rounded corners */
+    text-decoration: none; /* No underline */
+    transition: background-color 0.3s ease; /* Smooth background transition */
+}
+
+.patdashboard-link-button:hover {
+    background-color: #004d40; /* Darker shade on hover */
+}

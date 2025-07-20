@@ -1,0 +1,98 @@
+/* Mainpage.css */
+.container-fluid {
+  background: linear-gradient(135deg, #eaeaea, #ffffff);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  background-color: #004d40;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transform: translateY(0);
+  transition: transform 0.3s ease;
+  padding: 40px 20px;
+  margin: 20px auto;
+  max-width: 600px; /* Limit max width for better readability */
+}
+
+.main-content:hover {
+  transform: translateY(-5px);
+}
+
+h2 {
+  color: #eaeaea;
+  font-family: 'Arial', sans-serif; /* You can use any font you prefer */
+  margin-bottom: 20px;
+}
+
+p {
+  color: #eaeaea;
+  margin-bottom: 30px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Add space between buttons */
+}
+
+.btn {
+  background-color: #004d40; /* Primary button color */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s; /* Button effects */
+}
+
+.btn-primary {
+  box-shadow: 0 4px 8px rgba(0, 255, 89, 0.4);
+}
+
+.btn-secondary {
+  background-color: #004d40; /* Secondary button color */
+  box-shadow: 0 4px 8px rgba(108, 117, 125, 0.4);
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+.btn-primary:hover {
+  background-color: #5a6268; /* Darker shade on hover */
+}
+
+.btn-secondary:hover {
+  background-color: #5a6268; /* Darker shade on hover */
+}
+
+.create-account-button, .revoke-account-button {
+  width: 45%;
+  padding: 12px;
+  font-size: 16px;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.create-account-button {
+  background-color: #4CAF50;
+}
+
+.revoke-account-button {
+  background-color: #FF5733;
+}
+
+.create-account-button:hover {
+  background-color: #45a049;
+}
+
+.revoke-account-button:hover {
+  background-color: #e64526;
+}

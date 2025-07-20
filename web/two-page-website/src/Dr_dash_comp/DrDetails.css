@@ -1,0 +1,31 @@
+/* src/doctor_dash_components/DoctorDetails.css */
+
+.doctor-details-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    background-color: #f0f0f0;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.doctor-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* Circular doctor image */
+    margin-right: 20px;
+}
+
+.doctor-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.doctor-info p {
+    margin: 5px 0;
+    font-size: 1.1em;
+}
+
+h2 {
+    margin-bottom: 10px;
+}

@@ -1,0 +1,26 @@
+.patient-details-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.patient-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* Makes the image round */
+    margin-right: 20px;
+}
+
+.patient-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.patient-info p {
+    margin: 5px 0;
+    font-size: 1.1em;
+}
+
+h2 {
+    margin-bottom: 10px;
+}

@@ -1,0 +1,72 @@
+/* HospitalCreateBlock.module.css */
+.container {
+    background: linear-gradient(135deg, #eaeaea, #ffffff);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .mainContent {
+    background-color: #004d40;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: translateY(0);
+    transition: transform 0.3s ease;
+    padding: 40px 20px;
+    margin: 20px auto;
+    max-width: 600px;
+  }
+  
+  .mainContent:hover {
+    transform: translateY(-5px);
+  }
+  
+  .heading {
+    color: #eaeaea;
+    font-family: 'Arial', sans-serif;
+    margin-bottom: 20px;
+  }
+  
+  .description {
+    color: #eaeaea;
+    margin-bottom: 30px;
+  }
+  
+  .buttonContainer {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .btn {
+    background-color: #004d40;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  .btnPrimary {
+    box-shadow: 0 4px 8px rgba(0, 255, 89, 0.4);
+  }
+  
+  .btnSecondary {
+    background-color: #004d40;
+    box-shadow: 0 4px 8px rgba(108, 117, 125, 0.4);
+  }
+  
+  .btn:hover {
+    transform: translateY(-2px);
+  }
+  
+  .btnPrimary:hover {
+    background-color: #5a6268;
+  }
+  
+  .btnSecondary:hover {
+    background-color: #5a6268;
+  }
+  

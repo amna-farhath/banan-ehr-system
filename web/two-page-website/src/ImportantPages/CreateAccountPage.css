@@ -1,0 +1,89 @@
+/* src/components/CreateAccountPage.css */
+
+.create-account-page {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #eaeaea; /* Light background for consistency */
+}
+
+.create-account-page h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #004d40; /* Primary header color */
+}
+
+.create-account-page button {
+    width: 100%;
+    padding: 10px;
+    background-color: #004d40; /* Button color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: background-color 0.3s; /* Transition effect */
+}
+
+.create-account-page button:hover {
+    background-color: #005a50; /* Darker shade on hover */
+}
+
+.create-account-page form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.create-account-page .form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.create-account-page .form-group label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #004d40; /* Label color */
+}
+
+.create-account-page .form-group input,
+.create-account-page .form-group select {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.create-account-page .form-group input[type="file"] {
+    padding: 0;
+}
+
+.create-account-page button[type="submit"] {
+    grid-column: span 2;
+    padding: 15px;
+    background-color: #28a745; /* Consistent button color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.create-account-page button[type="submit"]:hover {
+    background-color: #218838; /* Darker shade on hover */
+}
+
+@media (max-width: 768px) {
+    .create-account-page form {
+        grid-template-columns: 1fr;
+    }
+
+    .create-account-page button[type="submit"],
+    .create-account-page button {
+        width: 100%;
+    }
+}

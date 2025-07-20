@@ -1,0 +1,71 @@
+/* Container for the entire revoke account page */
+.revoke-account-container {
+    padding: 20px;
+    min-height: 100vh; /* Full viewport height */
+}
+
+/* Main content styling */
+.revoke-account-content {
+    max-width: 600px; /* Limit the width of the form */
+    margin: auto; /* Center horizontally */
+    padding: 30px; /* Add padding around the form */
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 5px; /* Rounded corners */
+    background-color: #00695c; /* Medium green background for the form */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Soft shadow */
+}
+
+/* Header styling */
+.revoke-account-content h2 {
+    text-align: center; /* Center the header text */
+    margin-bottom: 20px; /* Space below the header */
+    color: white; /* White color for header */
+}
+
+/* Form group styling */
+.revoke-account-group {
+    margin-bottom: 15px; /* Space between form groups */
+}
+
+/* Label styling */
+.revoke-account-group label {
+    display: block; /* Block display for labels */
+    margin-bottom: 5px; /* Space below the label */
+    color: white; /* Change label text color to white */
+}
+
+/* Input and textarea styling */
+.revoke-account-group input[type="text"],
+.revoke-account-group input[type="password"],
+.revoke-account-group textarea {
+    width: 100%; /* Full width */
+    padding: 10px; /* Inner padding */
+    border: 1px solid #ccc; /* Border style */
+    border-radius: 4px; /* Rounded corners */
+    color: #333; /* Dark text color for better readability */
+    background-color: white; /* White background for input fields */
+}
+
+/* Textarea specific styles */
+.revoke-account-group textarea {
+    height: 100px; /* Fixed height */
+    resize: none; /* Prevent resizing */
+}
+
+/* Button styling */
+.revoke-account-button {
+    width: 100%; /* Full width */
+    padding: 12px; /* Inner padding */
+    background-color: #00897b; /* Matching green tone for the button */
+    color: white; /* White text color */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 16px; /* Font size */
+    transition: background-color 0.3s ease; /* Smooth background transition */
+}
+
+/* Button hover effect */
+.revoke-account-button:hover {
+    background-color: #00796b; /* Darker shade on hover */
+}
